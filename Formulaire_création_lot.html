@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Création d'un lot</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+    padding:20px;
+}
+
+.container{
+    max-width:600px;
+    margin:auto;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+h1{
+    text-align:center;
+    color:#2c3e50;
+    margin-bottom:25px;
+}
+
+.form-group{
+    margin-bottom:15px;
+}
+
+label{
+    display:block;
+    font-weight:bold;
+    margin-bottom:5px;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:16px;
+}
+
+textarea{
+    min-height:120px;
+    resize:vertical;
+}
+
+button{
+    width:100%;
+    background:#2e7d32;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:5px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#256428;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🌾 Création d'un lot</h1>
+
+    <form>
+
+        <div class="form-group">
+            <label for="remorque">Numéro de remorque</label>
+            <input type="text" id="remorque" placeholder="Ex : 12">
+        </div>
+
+        <div class="form-group">
+            <label for="date">Date de récolte</label>
+            <input type="date" id="date">
+        </div>
+
+        <div class="form-group">
+            <label for="parcelle">Préfixe parcelle</label>
+            <input type="text" id="parcelle" placeholder="Ex : PLY">
+        </div>
+
+        <div class="form-group">
+            <label for="numero">Numéro de la remorque remplie pour cette parcelle</label>
+            <input type="number" id="numero" placeholder="Ex : 5">
+        </div>
+
+        <div class="form-group">
+            <label for="notes">Notes complémentaires</label>
+            <textarea id="notes" placeholder="Informations supplémentaires..."></textarea>
+        </div>
+
+        <button type="submit">
+            Enregistrer le lot
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
